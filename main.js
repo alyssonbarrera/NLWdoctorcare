@@ -68,4 +68,4 @@ ScrollReveal({
   origin: 'top',
   distance: '30px',
   duration: 700
-}).reveal('#home header, #home .content, #home img, #home .stats, #services, #services header, #services .card, #about, #about header, #about .content, #about .content img, #contact, #contact header, #contact li, #contact a, #contact img');
+}).reveal('.headline, #home header, #home .content, #home img, #home .stats, #services, #services header, #services .card, #about, #about header, #about .content, #about img, #contact, #contact header, #contact li, #contact a, #contact img');
