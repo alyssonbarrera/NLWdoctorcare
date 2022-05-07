@@ -211,9 +211,13 @@ body.menu-expanded > :not(nav) {
     visibility: hidden;
 }
 
-.menu, .close-menu, body.menu-expanded .open-menu {
+.menu {
     opacity: 0;
     visibility: hidden;
+}
+
+body.menu-expanded .open-menu, body:not(.menu-expanded) .close-menu {
+    display: none;
 }
 
 body.menu-expanded .menu, body.menu-expanded .close-menu {
@@ -288,6 +292,7 @@ body.menu-expanded .logo, body.menu-expanded nav button {
 
 body.menu-expanded .logo path {
     fill: white;
+    transition: 300ms;
 }
 
 body.menu-expanded button path {
@@ -474,7 +479,7 @@ footer .social-links {
     right: 2.5rem;
 
     opacity: 0;
-    visibility: hidden;
+    display: none;
 
     transform: translateY(100%);
     transition: 200ms
@@ -482,7 +487,7 @@ footer .social-links {
 
 #backToTopButton.show {
     opacity: 1;
-    visibility: visible;
+    display: initial;
     transform: translateY(0)
 }
 
